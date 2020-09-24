@@ -27,11 +27,11 @@ class ViewController: UIViewController {
     @IBAction func enterButton(_ sender: UIButton) {
         
         let mText: String = textField.text!
-        textViews.text = "String:\(mText ) \nReverse: \(reverse(mText))\nFrist Letter: \(mText.characters.first ?? "N")"
+        textViews.text = "String: \(mText ) \nReverse: \(reverse(mText))\nFrist Letter:  \(mText.characters.first ?? "N")"
         if isPalindrome(inputString: mText){
-            textViews.text! += "\nLast letter \(mText.characters.last ?? "N") \nIt is palindrome"
+            textViews.text! += "\nLast letter:  \(mText.characters.last ?? "N") \nIt is palindrome"
         }else{
-            textViews.text! += "\nLast letter \(mText.characters.last ?? "N")\nIt is not palindrome"
+            textViews.text! += "\nLast letter:  \(mText.characters.last ?? "N")\nIt is not palindrome"
         }
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
