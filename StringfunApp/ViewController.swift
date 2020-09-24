@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         }else{
             textViews.text! += "\nLast letter:  \(mText.characters.last ?? "N")\nIt is not palindrome"
         }
+        textViews.text! += "\ncharacter count \(mText.characters.count)"
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
